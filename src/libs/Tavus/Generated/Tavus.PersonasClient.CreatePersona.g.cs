@@ -209,6 +209,7 @@ namespace Tavus
             global::System.Collections.Generic.IList<string>? documentIds = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+
             var __request = new global::Tavus.CreatePersonaRequest
             {
                 PersonaName = personaName,
