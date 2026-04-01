@@ -199,7 +199,6 @@ namespace Tavus
             string videoName,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-
             var __request = new global::Tavus.RenameVideoRequest
             {
                 VideoName = videoName,
