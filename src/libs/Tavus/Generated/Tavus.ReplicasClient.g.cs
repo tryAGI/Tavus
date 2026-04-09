@@ -12,7 +12,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public const string DefaultBaseUrl = "https://tavusapi.com";
+        public const string DefaultBaseUrl = "https://tavusapi.com/";
 
         private bool _disposeHttpClient = true;
 

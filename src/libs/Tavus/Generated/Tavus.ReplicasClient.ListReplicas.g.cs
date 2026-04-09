@@ -5,6 +5,25 @@ namespace Tavus
 {
     public partial class ReplicasClient
     {
+
+
+        private static readonly global::Tavus.EndPointSecurityRequirement s_ListReplicasSecurityRequirement0 =
+            new global::Tavus.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Tavus.EndPointAuthorizationRequirement[]
+                {                    new global::Tavus.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "x-api-key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Tavus.EndPointSecurityRequirement[] s_ListReplicasSecurityRequirements =
+            new global::Tavus.EndPointSecurityRequirement[]
+            {                s_ListReplicasSecurityRequirement0,
+            };
         partial void PrepareListReplicasArguments(
             global::System.Net.Http.HttpClient httpClient);
         partial void PrepareListReplicasRequest(
@@ -33,9 +52,15 @@ namespace Tavus
             PrepareListReplicasArguments(
                 httpClient: HttpClient);
 
+
+            var __authorizations = global::Tavus.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListReplicasSecurityRequirements,
+                operationName: "ListReplicasAsync");
+
             var __pathBuilder = new global::Tavus.PathBuilder(
                 path: "/v2/replicas",
-                baseUri: HttpClient.BaseAddress); 
+                baseUri: HttpClient.BaseAddress);
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -45,7 +70,7 @@ namespace Tavus
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")
