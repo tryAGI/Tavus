@@ -5,6 +5,25 @@ namespace Tavus
 {
     public partial class ConversationsClient
     {
+
+
+        private static readonly global::Tavus.EndPointSecurityRequirement s_GetConversationSecurityRequirement0 =
+            new global::Tavus.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Tavus.EndPointAuthorizationRequirement[]
+                {                    new global::Tavus.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "x-api-key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Tavus.EndPointSecurityRequirement[] s_GetConversationSecurityRequirements =
+            new global::Tavus.EndPointSecurityRequirement[]
+            {                s_GetConversationSecurityRequirement0,
+            };
         partial void PrepareGetConversationArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string conversationId,
@@ -43,12 +62,18 @@ namespace Tavus
                 conversationId: ref conversationId,
                 verbose: ref verbose);
 
+
+            var __authorizations = global::Tavus.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_GetConversationSecurityRequirements,
+                operationName: "GetConversationAsync");
+
             var __pathBuilder = new global::Tavus.PathBuilder(
                 path: $"/v2/conversations/{conversationId}",
                 baseUri: HttpClient.BaseAddress); 
             __pathBuilder
                 .AddOptionalParameter("verbose", verbose?.ToString().ToLowerInvariant()) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -58,7 +83,7 @@ namespace Tavus
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

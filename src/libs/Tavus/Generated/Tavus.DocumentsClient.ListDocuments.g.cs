@@ -5,6 +5,25 @@ namespace Tavus
 {
     public partial class DocumentsClient
     {
+
+
+        private static readonly global::Tavus.EndPointSecurityRequirement s_ListDocumentsSecurityRequirement0 =
+            new global::Tavus.EndPointSecurityRequirement
+            {
+                Authorizations = new global::Tavus.EndPointAuthorizationRequirement[]
+                {                    new global::Tavus.EndPointAuthorizationRequirement
+                    {
+                        Type = "ApiKey",
+                        Location = "Header",
+                        Name = "x-api-key",
+                        FriendlyName = "ApiKeyInHeader",
+                    },
+                },
+            };
+        private static readonly global::Tavus.EndPointSecurityRequirement[] s_ListDocumentsSecurityRequirements =
+            new global::Tavus.EndPointSecurityRequirement[]
+            {                s_ListDocumentsSecurityRequirement0,
+            };
         partial void PrepareListDocumentsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref int? page,
@@ -48,6 +67,12 @@ namespace Tavus
                 pageSize: ref pageSize,
                 tags: ref tags);
 
+
+            var __authorizations = global::Tavus.EndPointSecurityResolver.ResolveAuthorizations(
+                availableAuthorizations: Authorizations,
+                securityRequirements: s_ListDocumentsSecurityRequirements,
+                operationName: "ListDocumentsAsync");
+
             var __pathBuilder = new global::Tavus.PathBuilder(
                 path: "/v2/documents",
                 baseUri: HttpClient.BaseAddress); 
@@ -55,7 +80,7 @@ namespace Tavus
                 .AddOptionalParameter("page", page?.ToString())
                 .AddOptionalParameter("page_size", pageSize?.ToString())
                 .AddOptionalParameter("tags", tags) 
-                ; 
+                ;
             var __path = __pathBuilder.ToString();
             using var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                 method: global::System.Net.Http.HttpMethod.Get,
@@ -65,7 +90,7 @@ namespace Tavus
             __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
 
-            foreach (var __authorization in Authorizations)
+            foreach (var __authorization in __authorizations)
             {
                 if (__authorization.Type == "Http" ||
                     __authorization.Type == "OAuth2")

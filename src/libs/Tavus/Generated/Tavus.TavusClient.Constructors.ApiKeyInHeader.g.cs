@@ -6,6 +6,7 @@ namespace Tavus
     public sealed partial class TavusClient
     {
         /// <inheritdoc cref="TavusClient(global::System.Net.Http.HttpClient?, global::System.Uri?, global::System.Collections.Generic.List{global::Tavus.EndPointAuthorization}?, bool)"/>
+
         public TavusClient(
             string apiKey,
             global::System.Net.Http.HttpClient? httpClient = null,
