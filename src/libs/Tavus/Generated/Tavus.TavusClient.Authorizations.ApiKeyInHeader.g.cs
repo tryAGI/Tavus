@@ -26,6 +26,7 @@ namespace Tavus
             Authorizations.Add(new global::Tavus.EndPointAuthorization
             {
                 Type = "ApiKey",
+                SchemeId = "ApiKeyAuth",
                 Location = "Header",
                 Name = "x-api-key",
                 Value = apiKey,

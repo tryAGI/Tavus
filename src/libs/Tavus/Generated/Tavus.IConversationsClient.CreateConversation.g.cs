@@ -9,11 +9,13 @@ namespace Tavus
         /// Start a real-time video conversation with your AI replica and persona. The response includes a conversation_url to join the call or embed it.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Tavus.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.CreateConversationResponse> CreateConversationAsync(
 
             global::Tavus.CreateConversationRequest request,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Conversation<br/>
@@ -83,6 +85,7 @@ namespace Tavus
         /// <param name="documentIds">
         /// Knowledge base document IDs to make available.
         /// </param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.CreateConversationResponse> CreateConversationAsync(
@@ -108,6 +111,7 @@ namespace Tavus
             string? recordingS3BucketName = default,
             global::Tavus.ConversationProperties? properties = default,
             global::System.Collections.Generic.IList<string>? documentIds = default,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
