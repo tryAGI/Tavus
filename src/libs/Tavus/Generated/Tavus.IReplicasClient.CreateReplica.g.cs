@@ -9,11 +9,13 @@ namespace Tavus
         /// Create a new replica using the latest phoenix-4 model.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Tavus.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Replica> CreateReplicaAsync(
 
             global::Tavus.CreateReplicaRequest request,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Replica<br/>
@@ -39,6 +41,7 @@ namespace Tavus
         /// </param>
         /// <param name="trainAudioUrl"></param>
         /// <param name="thumbnailVideoUrl"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Replica> CreateReplicaAsync(
@@ -50,6 +53,7 @@ namespace Tavus
             global::Tavus.CreateReplicaRequestReplicaType? replicaType = default,
             string? trainAudioUrl = default,
             string? thumbnailVideoUrl = default,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

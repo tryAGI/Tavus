@@ -9,11 +9,13 @@ namespace Tavus
         /// Generates a new video using a Replica and either a script or an audio file.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Tavus.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Video> GenerateVideoAsync(
 
             global::Tavus.GenerateVideoRequest request,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Generate Video<br/>
@@ -38,6 +40,7 @@ namespace Tavus
         /// </param>
         /// <param name="transparentBackground"></param>
         /// <param name="properties"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Video> GenerateVideoAsync(
@@ -50,6 +53,7 @@ namespace Tavus
             string? backgroundSourceUrl = default,
             bool? transparentBackground = default,
             global::Tavus.VideoProperties? properties = default,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

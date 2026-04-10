@@ -9,11 +9,13 @@ namespace Tavus
         /// Create and customize a persona's behavior and capabilities for CVI.
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Tavus.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Persona> CreatePersonaAsync(
 
             global::Tavus.CreatePersonaRequest request,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Create Persona<br/>
@@ -30,6 +32,7 @@ namespace Tavus
         /// <param name="guardrailsId"></param>
         /// <param name="objectivesId"></param>
         /// <param name="documentIds"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Tavus.Persona> CreatePersonaAsync(
@@ -42,6 +45,7 @@ namespace Tavus
             string? guardrailsId = default,
             string? objectivesId = default,
             global::System.Collections.Generic.IList<string>? documentIds = default,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
 }
