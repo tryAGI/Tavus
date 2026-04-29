@@ -139,7 +139,7 @@ namespace Tavus
                 PreparePatchObjectivesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    objectivesId: objectivesId,
+                    objectivesId: objectivesId!,
                     request: request);
 
                 return __httpRequest;

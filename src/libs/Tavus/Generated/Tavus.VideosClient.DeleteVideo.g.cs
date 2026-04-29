@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareDeleteVideoRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    videoId: videoId);
+                    videoId: videoId!);
 
                 return __httpRequest;
             }

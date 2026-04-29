@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareEndConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId);
+                    conversationId: conversationId!);
 
                 return __httpRequest;
             }

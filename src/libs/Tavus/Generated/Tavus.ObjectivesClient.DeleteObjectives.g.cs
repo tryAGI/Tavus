@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareDeleteObjectivesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    objectivesId: objectivesId);
+                    objectivesId: objectivesId!);
 
                 return __httpRequest;
             }

@@ -139,7 +139,7 @@ namespace Tavus
                 PrepareUpdateDocumentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    documentId: documentId,
+                    documentId: documentId!,
                     request: request);
 
                 return __httpRequest;

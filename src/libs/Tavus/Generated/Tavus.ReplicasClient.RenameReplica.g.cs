@@ -139,7 +139,7 @@ namespace Tavus
                 PrepareRenameReplicaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    replicaId: replicaId,
+                    replicaId: replicaId!,
                     request: request);
 
                 return __httpRequest;

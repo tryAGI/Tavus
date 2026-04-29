@@ -125,7 +125,7 @@ namespace Tavus
                 PrepareGetObjectivesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    objectivesId: objectivesId);
+                    objectivesId: objectivesId!);
 
                 return __httpRequest;
             }

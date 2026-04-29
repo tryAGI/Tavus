@@ -139,7 +139,7 @@ namespace Tavus
                 PrepareRecrawlDocumentRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    documentId: documentId,
+                    documentId: documentId!,
                     request: request);
 
                 return __httpRequest;

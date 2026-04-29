@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareDeleteGuardrailsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    guardrailsId: guardrailsId);
+                    guardrailsId: guardrailsId!);
 
                 return __httpRequest;
             }
