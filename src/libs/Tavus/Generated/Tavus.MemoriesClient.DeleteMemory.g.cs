@@ -125,8 +125,8 @@ namespace Tavus
                 PrepareDeleteMemoryRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    memoryStore: memoryStore,
-                    memoryId: memoryId);
+                    memoryStore: memoryStore!,
+                    memoryId: memoryId!);
 
                 return __httpRequest;
             }

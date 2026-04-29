@@ -139,7 +139,7 @@ namespace Tavus
                 PreparePatchGuardrailsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    guardrailsId: guardrailsId,
+                    guardrailsId: guardrailsId!,
                     request: request);
 
                 return __httpRequest;

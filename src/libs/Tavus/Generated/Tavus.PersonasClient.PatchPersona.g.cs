@@ -139,7 +139,7 @@ namespace Tavus
                 PreparePatchPersonaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    personaId: personaId,
+                    personaId: personaId!,
                     request: request);
 
                 return __httpRequest;

@@ -133,7 +133,7 @@ namespace Tavus
                 PrepareGetConversationRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    conversationId: conversationId,
+                    conversationId: conversationId!,
                     verbose: verbose);
 
                 return __httpRequest;

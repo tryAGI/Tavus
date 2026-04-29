@@ -125,7 +125,7 @@ namespace Tavus
                 PrepareGetPersonaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    personaId: personaId);
+                    personaId: personaId!);
 
                 return __httpRequest;
             }

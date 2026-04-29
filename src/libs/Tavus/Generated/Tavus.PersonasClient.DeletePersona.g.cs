@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareDeletePersonaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    personaId: personaId);
+                    personaId: personaId!);
 
                 return __httpRequest;
             }

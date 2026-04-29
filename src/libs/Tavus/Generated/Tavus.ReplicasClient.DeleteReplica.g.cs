@@ -120,7 +120,7 @@ namespace Tavus
                 PrepareDeleteReplicaRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    replicaId: replicaId);
+                    replicaId: replicaId!);
 
                 return __httpRequest;
             }
