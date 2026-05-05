@@ -43,7 +43,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public ConversationsClient Conversations => new ConversationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ConversationsClient Conversations => new ConversationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -52,7 +52,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public DocumentsClient Documents => new DocumentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DocumentsClient Documents => new DocumentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -61,7 +61,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public GuardrailsClient Guardrails => new GuardrailsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public GuardrailsClient Guardrails => new GuardrailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -70,7 +70,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public MemoriesClient Memories => new MemoriesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public MemoriesClient Memories => new MemoriesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -79,7 +79,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public ObjectivesClient Objectives => new ObjectivesClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ObjectivesClient Objectives => new ObjectivesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -88,7 +88,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public PersonasClient Personas => new PersonasClient(HttpClient, authorizations: Authorizations, options: Options)
+        public PersonasClient Personas => new PersonasClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -97,7 +97,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public ReplicasClient Replicas => new ReplicasClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ReplicasClient Replicas => new ReplicasClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -106,7 +106,7 @@ namespace Tavus
         /// <summary>
         /// 
         /// </summary>
-        public VideosClient Videos => new VideosClient(HttpClient, authorizations: Authorizations, options: Options)
+        public VideosClient Videos => new VideosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -145,10 +145,10 @@ namespace Tavus
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public TavusClient(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::Tavus.EndPointAuthorization>? authorizations = null,
-            global::Tavus.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::Tavus.EndPointAuthorization>? authorizations,
+            global::Tavus.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 
