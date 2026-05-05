@@ -21,6 +21,19 @@ namespace Tavus
         /// Create Replica<br/>
         /// Create a new replica using the latest phoenix-4 model.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::Tavus.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::Tavus.AutoSDKHttpResponse<global::Tavus.Replica>> CreateReplicaAsResponseAsync(
+
+            global::Tavus.CreateReplicaRequest request,
+            global::Tavus.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Replica<br/>
+        /// Create a new replica using the latest phoenix-4 model.
+        /// </summary>
         /// <param name="trainVideoUrl">
         /// Publicly accessible download link to the training video.
         /// </param>
