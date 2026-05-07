@@ -260,7 +260,7 @@ public static class TavusToolExtensions
             parts.Add($"Transcript ({conversation.Transcript.Count} messages):");
             foreach (var msg in conversation.Transcript)
             {
-                parts.Add($"  > {msg.ToJson()}");
+                parts.Add($"  > {msg.ToJson(SourceGenerationContext.Default)}");
             }
         }
 
