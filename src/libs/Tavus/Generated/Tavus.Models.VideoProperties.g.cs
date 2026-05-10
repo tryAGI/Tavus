@@ -69,5 +69,6 @@ namespace Tavus
         public VideoProperties()
         {
         }
+
     }
 }

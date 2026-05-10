@@ -40,5 +40,6 @@ namespace Tavus
         public RenameReplicaRequest()
         {
         }
+
     }
 }
