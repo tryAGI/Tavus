@@ -48,5 +48,6 @@ namespace Tavus
         public ConditionalObjective()
         {
         }
+
     }
 }
