@@ -4,60 +4,60 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PerceptionLayer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("perception_model")]
         public string? PerceptionModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ambient_awareness_queries")]
         public global::System.Collections.Generic.IList<string>? AmbientAwarenessQueries { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visual_awareness_queries")]
         public global::System.Collections.Generic.IList<string>? VisualAwarenessQueries { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("perception_analysis_queries")]
         public global::System.Collections.Generic.IList<string>? PerceptionAnalysisQueries { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_awareness_queries")]
         public global::System.Collections.Generic.IList<string>? AudioAwarenessQueries { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visual_tool_prompt")]
         public string? VisualToolPrompt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visual_tools")]
         public global::System.Collections.Generic.IList<global::Tavus.ToolDefinition>? VisualTools { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_tool_prompt")]
         public string? AudioToolPrompt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("audio_tools")]
         public global::System.Collections.Generic.IList<global::Tavus.ToolDefinition>? AudioTools { get; set; }

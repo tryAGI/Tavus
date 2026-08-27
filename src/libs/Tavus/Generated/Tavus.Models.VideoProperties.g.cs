@@ -4,32 +4,32 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VideoProperties
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("background_scroll")]
         public bool? BackgroundScroll { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("background_scroll_type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.VideoPropertiesBackgroundScrollTypeJsonConverter))]
         public global::Tavus.VideoPropertiesBackgroundScrollType? BackgroundScrollType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("background_scroll_depth")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.VideoPropertiesBackgroundScrollDepthJsonConverter))]
         public global::Tavus.VideoPropertiesBackgroundScrollDepth? BackgroundScrollDepth { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("background_scroll_return")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.VideoPropertiesBackgroundScrollReturnJsonConverter))]

@@ -4,60 +4,60 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConversationProperties
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("max_call_duration")]
         public int? MaxCallDuration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("participant_left_timeout")]
         public int? ParticipantLeftTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("participant_absent_timeout")]
         public int? ParticipantAbsentTimeout { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enable_recording")]
         public bool? EnableRecording { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("enable_closed_captions")]
         public bool? EnableClosedCaptions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apply_greenscreen")]
         public bool? ApplyGreenscreen { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("language")]
         public string? Language { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recording_s3_bucket_region")]
         public string? RecordingS3BucketRegion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recording_s3_bucket_name")]
         public string? RecordingS3BucketName { get; set; }

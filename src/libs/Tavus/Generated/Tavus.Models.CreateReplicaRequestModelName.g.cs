@@ -9,11 +9,11 @@ namespace Tavus
     public enum CreateReplicaRequestModelName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phoenix3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phoenix4,
     }

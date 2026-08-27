@@ -4,16 +4,16 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CreateObjectivesRequestConfirmationMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
     }

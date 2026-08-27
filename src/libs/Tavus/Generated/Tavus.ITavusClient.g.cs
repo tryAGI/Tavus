@@ -40,48 +40,48 @@ namespace Tavus
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConversationsClient Conversations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentsClient Documents { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GuardrailsClient Guardrails { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MemoriesClient Memories { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObjectivesClient Objectives { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PersonasClient Personas { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ReplicasClient Replicas { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideosClient Videos { get; }
 

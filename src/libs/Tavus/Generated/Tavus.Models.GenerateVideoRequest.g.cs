@@ -4,7 +4,7 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GenerateVideoRequest
     {
@@ -28,13 +28,13 @@ namespace Tavus
         public string? AudioUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("video_name")]
         public string? VideoName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
         public string? CallbackUrl { get; set; }
@@ -52,13 +52,13 @@ namespace Tavus
         public string? BackgroundSourceUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("transparent_background")]
         public bool? TransparentBackground { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         public global::Tavus.VideoProperties? Properties { get; set; }

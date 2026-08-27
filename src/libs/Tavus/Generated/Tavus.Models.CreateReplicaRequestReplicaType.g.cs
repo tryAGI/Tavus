@@ -9,11 +9,11 @@ namespace Tavus
     public enum CreateReplicaRequestReplicaType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NonHuman,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Personal,
     }

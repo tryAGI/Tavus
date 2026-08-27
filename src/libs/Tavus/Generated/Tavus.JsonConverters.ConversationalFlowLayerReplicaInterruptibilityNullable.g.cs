@@ -20,7 +20,7 @@ namespace Tavus.JsonConverters
                     {
                         return global::Tavus.ConversationalFlowLayerReplicaInterruptibilityExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,12 +4,12 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreatePersonaRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("persona_name")]
         public string? PersonaName { get; set; }
@@ -21,44 +21,44 @@ namespace Tavus
         public string? SystemPrompt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("context")]
         public string? Context { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("default_replica_id")]
         public string? DefaultReplicaId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pipeline_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.CreatePersonaRequestPipelineModeJsonConverter))]
         public global::Tavus.CreatePersonaRequestPipelineMode? PipelineMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("layers")]
         public global::Tavus.PersonaLayers? Layers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("guardrails_id")]
         public string? GuardrailsId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objectives_id")]
         public string? ObjectivesId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("document_ids")]
         public global::System.Collections.Generic.IList<string>? DocumentIds { get; set; }

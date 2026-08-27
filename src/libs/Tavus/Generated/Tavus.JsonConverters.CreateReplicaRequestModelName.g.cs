@@ -20,7 +20,7 @@ namespace Tavus.JsonConverters
                     {
                         return global::Tavus.CreateReplicaRequestModelNameExtensions.ToEnum(stringValue) ?? default;
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

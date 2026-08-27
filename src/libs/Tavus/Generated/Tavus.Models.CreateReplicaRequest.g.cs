@@ -4,7 +4,7 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateReplicaRequest
     {
@@ -48,13 +48,13 @@ namespace Tavus
         public global::Tavus.CreateReplicaRequestReplicaType? ReplicaType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("train_audio_url")]
         public string? TrainAudioUrl { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("thumbnail_video_url")]
         public string? ThumbnailVideoUrl { get; set; }
