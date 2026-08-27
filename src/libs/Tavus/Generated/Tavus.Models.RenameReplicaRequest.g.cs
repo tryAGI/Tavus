@@ -4,12 +4,12 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RenameReplicaRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("replica_name")]
         [global::System.Text.Json.Serialization.JsonRequired]

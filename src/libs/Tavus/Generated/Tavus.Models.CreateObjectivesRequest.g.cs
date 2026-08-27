@@ -4,55 +4,55 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateObjectivesRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objective_name")]
         public string? ObjectiveName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objective_prompt")]
         public string? ObjectivePrompt { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmation_mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.CreateObjectivesRequestConfirmationModeJsonConverter))]
         public global::Tavus.CreateObjectivesRequestConfirmationMode? ConfirmationMode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output_variables")]
         public global::System.Collections.Generic.IList<string>? OutputVariables { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modality")]
         public string? Modality { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next_conditional_objectives")]
         public global::System.Collections.Generic.IList<global::Tavus.ConditionalObjective>? NextConditionalObjectives { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("next_required_objective")]
         public string? NextRequiredObjective { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callback_url")]
         public string? CallbackUrl { get; set; }

@@ -4,12 +4,12 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class RecrawlDocumentRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crawl")]
         public global::Tavus.CrawlConfig? Crawl { get; set; }

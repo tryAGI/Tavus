@@ -4,19 +4,19 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class VoiceSettings
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("speed")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.VoiceSettingsSpeedJsonConverter))]
         public global::Tavus.VoiceSettingsSpeed? Speed { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("emotion")]
         public global::System.Collections.Generic.IList<string>? Emotion { get; set; }

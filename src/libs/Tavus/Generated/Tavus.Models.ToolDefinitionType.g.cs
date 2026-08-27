@@ -4,12 +4,12 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ToolDefinitionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Function,
     }

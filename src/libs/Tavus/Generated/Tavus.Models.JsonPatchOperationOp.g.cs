@@ -4,32 +4,32 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum JsonPatchOperationOp
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Add,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Copy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Move,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Remove,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replace,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Test,
     }

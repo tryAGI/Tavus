@@ -10,7 +10,7 @@ namespace Tavus
     public sealed partial class MemoriesClient : global::Tavus.IMemoriesClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://tavusapi.com/";
 
@@ -37,7 +37,7 @@ namespace Tavus
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Tavus.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {

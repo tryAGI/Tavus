@@ -4,7 +4,7 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CreateConversationRequest
     {
@@ -129,7 +129,7 @@ namespace Tavus
         public string? RecordingS3BucketName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         public global::Tavus.ConversationProperties? Properties { get; set; }

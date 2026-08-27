@@ -11,7 +11,7 @@ namespace Tavus
     public sealed partial class TavusClient : global::Tavus.ITavusClient, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://tavusapi.com/";
 
@@ -38,7 +38,7 @@ namespace Tavus
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Tavus.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -48,7 +48,7 @@ namespace Tavus
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ConversationsClient Conversations => new ConversationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -57,7 +57,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DocumentsClient Documents => new DocumentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public GuardrailsClient Guardrails => new GuardrailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public MemoriesClient Memories => new MemoriesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ObjectivesClient Objectives => new ObjectivesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public PersonasClient Personas => new PersonasClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ReplicasClient Replicas => new ReplicasClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace Tavus
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public VideosClient Videos => new VideosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

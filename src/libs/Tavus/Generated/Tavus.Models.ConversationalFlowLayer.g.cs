@@ -4,25 +4,25 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ConversationalFlowLayer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("turn_detection_model")]
         public string? TurnDetectionModel { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("turn_taking_patience")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.ConversationalFlowLayerTurnTakingPatienceJsonConverter))]
         public global::Tavus.ConversationalFlowLayerTurnTakingPatience? TurnTakingPatience { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("replica_interruptibility")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Tavus.JsonConverters.ConversationalFlowLayerReplicaInterruptibilityJsonConverter))]

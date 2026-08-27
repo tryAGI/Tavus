@@ -4,7 +4,7 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class LlmLayerHeaders
     {

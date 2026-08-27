@@ -4,16 +4,16 @@
 namespace Tavus
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum VideoPropertiesBackgroundScrollReturn
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Halt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Return,
     }
